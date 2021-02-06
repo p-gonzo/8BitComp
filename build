@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./tools/vasm6502 -Fbin -o ./builds/$1.bin ./src/$1.s
