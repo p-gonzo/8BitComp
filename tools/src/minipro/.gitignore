@@ -1,0 +1,7 @@
+*.o
+minipro
+minipro-query-db
+version.h
+version.c
+*.tar
+*.gz
