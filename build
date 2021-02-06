@@ -1,3 +1,5 @@
 #!/bin/bash
 
-./tools/vasm6502 -Fbin -o ./builds/$1.bin ./src/$1.s
+./tools/vasm6502 -Fbin -o ./builds/$1.bin ./src/$1.s || { exit 1; }
+echo "\n---\n"
+hexdump -C ./builds/$1.bin
